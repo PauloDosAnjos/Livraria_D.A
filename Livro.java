@@ -4,6 +4,7 @@ public class Livro {
     private double valor;
     private String isbn; //isbn (um número de identificação, International Standard Book Number)
     private Autor autor;
+    private boolean impresso;
 
 
     public void mostrarDetalhes() {
@@ -40,6 +41,8 @@ public class Livro {
     //contructor
     public Livro (Autor autor) {
         this.autor = autor;
+        this.isbn = "000-00-00000-00-0";
+        this.impresso = true;
     }
 
 
